@@ -1,0 +1,300 @@
+🟢 Nivel Básico (1–20)
+Crear una lista con 5 números e imprimirla.
+
+Imprimir los elementos de una lista uno por uno.
+
+Obtener la longitud de una lista.
+
+Acceder al primer y último elemento de una lista.
+
+Modificar el segundo elemento de una lista.
+
+Agregar un elemento al final de una lista.
+
+Insertar un elemento en la posición 2.
+
+Eliminar un elemento específico de la lista.
+
+Eliminar el último elemento con .pop().
+
+Vaciar toda la lista.
+
+Verificar si un elemento existe en una lista.
+
+Contar cuántas veces aparece un elemento.
+
+Ordenar una lista de menor a mayor.
+
+Invertir el orden de una lista.
+
+Crear una lista a partir del rango del 1 al 10.
+
+Sumar todos los elementos de una lista numérica.
+
+Encontrar el mayor número de una lista.
+
+Encontrar el menor número de una lista.
+
+Crear una copia exacta de una lista.
+
+Unir dos listas en una sola.
+
+🟡 Nivel Intermedio (21–40)
+Eliminar los duplicados de una lista.
+
+Filtrar los números pares de una lista.
+
+Filtrar los números impares de una lista.
+
+Elevar al cuadrado cada número de la lista.
+
+Sumar elemento a elemento dos listas de igual longitud.
+
+Intercambiar el primer y el último elemento.
+
+Obtener los 3 elementos centrales de una lista impar.
+
+Separar una lista en dos mitades.
+
+Crear una lista de palabras y contar las que tienen más de 5 letras.
+
+Reemplazar todos los ceros por "cero".
+
+Encontrar los elementos comunes entre dos listas.
+
+Generar una lista con los primeros 10 múltiplos de 3.
+
+Convertir una lista de strings a mayúsculas.
+
+Revertir cada palabra en una lista de strings.
+
+Eliminar los elementos menores a 10.
+
+Comprobar si una lista es palíndromo.
+
+Dividir una lista en sublistas de tamaño 3.
+
+Ordenar una lista de strings por longitud.
+
+Convertir una lista de caracteres en una palabra.
+
+Encontrar el índice del elemento máximo.
+
+🔴 Nivel Avanzado (41–50)
+Agrupar elementos por tipo (números, strings, booleanos).
+
+Contar cuántos elementos de una lista son únicos.
+
+Crear una lista de listas y sumar por columnas.
+
+Aplanar una lista de listas.
+
+Eliminar los elementos repetidos manteniendo el orden.
+
+Dada una lista ordenada, eliminar elementos consecutivos duplicados.
+
+Rotar la lista 3 posiciones a la derecha.
+
+Calcular la mediana de una lista numérica.
+
+Encontrar la sublista más larga creciente.
+
+Generar todas las combinaciones posibles de una lista de 3 elementos.
+
+
+
+# Ejercicio 1
+lista1 = [1, 2, 3, 4, 5]
+print(lista1)
+
+# Ejercicio 2
+for elemento in lista1:
+    print(elemento)
+
+# Ejercicio 3
+print(len(lista1))
+
+# Ejercicio 4
+print(lista1[0], lista1[-1])
+
+# Ejercicio 5
+lista1[1] = 20
+print(lista1)
+
+# Ejercicio 6
+lista1.append(6)
+print(lista1)
+
+# Ejercicio 7
+lista1.insert(2, 99)
+print(lista1)
+
+# Ejercicio 8
+lista1.remove(99)
+print(lista1)
+
+# Ejercicio 9
+lista1.pop()
+print(lista1)
+
+# Ejercicio 10
+lista1.clear()
+print(lista1)
+
+# Ejercicio 11
+print(3 in [1, 2, 3])
+
+# Ejercicio 12
+print([1, 2, 2, 3].count(2))
+
+# Ejercicio 13
+print(sorted([4, 1, 3]))
+
+# Ejercicio 14
+print(list(reversed([1, 2, 3])))
+
+# Ejercicio 15
+print(list(range(1, 11)))
+
+# Ejercicio 16
+print(sum([1, 2, 3, 4]))
+
+# Ejercicio 17
+print(max([1, 9, 3]))
+
+# Ejercicio 18
+print(min([1, 9, 3]))
+
+# Ejercicio 19
+original = [1, 2, 3]
+copia = original[:]
+print(copia)
+
+# Ejercicio 20
+print([1, 2] + [3, 4])
+
+# Ejercicio 21
+print(list(set([1, 2, 2, 3])))
+
+# Ejercicio 22
+print([x for x in range(10) if x % 2 == 0])
+
+# Ejercicio 23
+print([x for x in range(10) if x % 2 != 0])
+
+# Ejercicio 24
+print([x**2 for x in [1, 2, 3]])
+
+# Ejercicio 25
+print([x + y for x, y in zip([1, 2, 3], [4, 5, 6])])
+
+# Ejercicio 26
+l = [1, 2, 3]
+l[0], l[-1] = l[-1], l[0]
+print(l)
+
+# Ejercicio 27
+l = [1, 2, 3, 4, 5]
+print(l[len(l)//2-1:len(l)//2+2])
+
+# Ejercicio 28
+l = [1, 2, 3, 4]
+mid = len(l)//2
+print(l[:mid], l[mid:])
+
+# Ejercicio 29
+palabras = ["hola", "educacion", "libro", "mundo"]
+print(len([p for p in palabras if len(p) > 5]))
+
+# Ejercicio 30
+print(["cero" if x == 0 else x for x in [0, 1, 2, 0]])
+
+# Ejercicio 31
+print(set([1, 2, 3]) & set([2, 3, 4]))
+
+# Ejercicio 32
+print([x*3 for x in range(1, 11)])
+
+# Ejercicio 33
+print([s.upper() for s in ["hola", "mundo"]])
+
+# Ejercicio 34
+print([s[::-1] for s in ["hola", "mundo"]])
+
+# Ejercicio 35
+print([x for x in [5, 12, 18, 7] if x >= 10])
+
+# Ejercicio 36
+l = [1, 2, 3, 2, 1]
+print(l == l[::-1])
+
+# Ejercicio 37
+l = [1, 2, 3, 4, 5, 6, 7]
+print([l[i:i+3] for i in range(0, len(l), 3)])
+
+# Ejercicio 38
+print(sorted(["hola", "a", "mundo"], key=len))
+
+# Ejercicio 39
+print("".join(['H', 'o', 'l', 'a']))
+
+# Ejercicio 40
+lista = [1, 4, 9, 3]
+print(lista.index(max(lista)))
+
+# Ejercicio 41
+l = [1, "hola", True, 2, "mundo", False]
+numeros = [x for x in l if isinstance(x, (int, float)) and not isinstance(x, bool)]
+strings = [x for x in l if isinstance(x, str)]
+booleanos = [x for x in l if isinstance(x, bool)]
+print(numeros, strings, booleanos)
+
+# Ejercicio 42
+print(len(set([1, 2, 2, 3, 3, 4])))
+
+# Ejercicio 43
+m = [[1, 2], [3, 4], [5, 6]]
+print([sum(col) for col in zip(*m)])
+
+# Ejercicio 44
+m = [[1, 2], [3, 4], [5]]
+print([item for sublist in m for item in sublist])
+
+# Ejercicio 45
+l = [1, 2, 2, 3, 1]
+res = []
+[res.append(x) for x in l if x not in res]
+print(res)
+
+# Ejercicio 46
+l = [1, 1, 2, 2, 3, 3]
+res = [l[0]] + [l[i] for i in range(1, len(l)) if l[i] != l[i-1]]
+print(res)
+
+# Ejercicio 47
+l = [1, 2, 3, 4, 5]
+n = 3
+print(l[-n:] + l[:-n])
+
+# Ejercicio 48
+l = sorted([4, 1, 3])
+n = len(l)
+mediana = l[n//2] if n % 2 == 1 else (l[n//2 - 1] + l[n//2]) / 2
+print(mediana)
+
+# Ejercicio 49
+def sublista_creciente(lista):
+    mejor = actual = [lista[0]]
+    for i in range(1, len(lista)):
+        if lista[i] > lista[i-1]:
+            actual.append(lista[i])
+        else:
+            if len(actual) > len(mejor):
+                mejor = actual
+            actual = [lista[i]]
+    return mejor if len(actual) > len(mejor) else mejor
+print(sublista_creciente([1, 2, 3, 1, 2, 3, 4]))
+
+# Ejercicio 50
+from itertools import permutations
+print(list(permutations([1, 2, 3])))
