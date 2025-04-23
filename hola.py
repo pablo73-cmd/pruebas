@@ -7,7 +7,8 @@ print("Hola ", nombre )
 
 numero1= 1
 numero2 = 4
-resultado = numero1 + numero2
+numero3 = 6
+resultado = numero1 + numero2 + numero3
 
 print("El resultado es ", resultado)
 
